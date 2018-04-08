@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+}
+
+/* style dla nawigacji */
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #f9fcfe;
+    z-index: 100;
+    left: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+nav ul {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 40px;
+}
+
+/* style dla headera */
+
+nav a:link {
+    color: green;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+nav a:visited {
+    color: green;
+}
+
+header {
+    height: 100vh;
+    background-image: url('../img/header-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wysrodkowany {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.green {
+    color: limegreen;
+    font-weight: 400;
+}
+
+section {
+    position: relative;
+    background-color: #f9fcfe;
+}
+
+section h2 {
+    color: black;
+}
+
+figure,
+article {
+    float: left;
+    width: 50%;
+}
+figure {
+    text-align: center;
+    margin: 0;
+}
+figure img {
+    width: 40%;
+    border-radius: 10px;
+    border: 10px solid white;
+
+
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
