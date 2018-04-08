@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -6,43 +10,47 @@ body {
 
 /* style dla nawigacji */
 
-nav {
+#main-nav {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     background-color: #f9fcfe;
     z-index: 100;
-    left: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 
-nav ul {
+#main-nav ul {
     text-align: right;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-nav ul li {
+#main-nav ul .list-item {
     display: inline-block;
-    line-height: 50px;
-    margin: 0 40px;
+    line-height: 60px;
+    margin: 0 20px;
 }
+
+
+#main-nav ul .list-item a {
+    color: limegreen;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+#main-nav ul .list-item a:hover {
+    color: #222;
+}
+
+#main-nav ul .list-item a:visited {
+    color: limegreen;
+}
+
 
 /* style dla headera */
-
-nav a:link {
-    color: green;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: gray;
-}
-
-nav a:visited {
-    color: green;
-}
 
 header {
     height: 100vh;
@@ -75,36 +83,91 @@ h1 {
     font-weight: 400;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
 section {
     position: relative;
+    padding: 30px 0;
+}
+
+section#about {
     background-color: #f9fcfe;
+
+
+-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.53);
+box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.53);
+
 }
 
 section h2 {
     color: black;
 }
 
-figure,
-article {
+section#about figure,
+section#about article {
     float: left;
     width: 50%;
 }
-figure {
+
+section#about figure {
     text-align: center;
     margin: 0;
 }
-figure img {
+
+section#about figure img {
     width: 40%;
     border-radius: 10px;
     border: 10px solid white;
+}
 
+
+section#skills {
+    text-align: center;
+}
+
+section#skills figure {
+    display: inline-block;
+    width: 10%;
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+section#portfolio {
+    text-align: center;
 
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
+#pierwszy,
+#drugi,
+#trzeci {
+    display: inline-block;
+    width: 33.3333%;
+    float: left;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-.clear {
-    clear: both;
+#pierwszy {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#drugi {
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#trzeci {
+    background-image: url('../img/portfolio4.jpg');
 }
